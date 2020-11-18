@@ -1,55 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.4" tiledversion="2020.10.30" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="32" tileheight="32" infinite="0" nextlayerid="22" nextobjectid="1">
+<map version="1.4" tiledversion="2020.10.30" orientation="orthogonal" renderorder="right-down" width="8" height="8" tilewidth="32" tileheight="32" infinite="0" nextlayerid="46" nextobjectid="1">
  <tileset firstgid="1" source="../tilesets/decoration_medieval/fence_medieval.tsx"/>
  <tileset firstgid="513" source="../tilesets/medieval-buildings/medieval-buildings-corrected-door.tsx"/>
  <tileset firstgid="769" name="terrain" tilewidth="32" tileheight="32" tilecount="70" columns="10">
-  <image source="../../Downloads/grass.png" width="320" height="224"/>
+  <image source="../../../../Downloads/grass.png" width="320" height="224"/>
  </tileset>
  <tileset firstgid="839" source="../tilesets/Mage City Arcanos/Mage City Arcanos.tsx"/>
  <tileset firstgid="1199" name="interior-walls-bleutailfly-combined" tilewidth="32" tileheight="32" tilecount="444" columns="12">
-  <image source="../tilesets/interior-walls-bleutailfly-combined.png" width="400" height="1200"/>
+  <image source="../tilesets/interior walls/interior-walls-bleutailfly-combined.png" width="400" height="1200"/>
  </tileset>
  <tileset firstgid="1643" name="decorations-medieval" tilewidth="32" tileheight="32" tilecount="1024" columns="16">
   <image source="../tilesets/decoration_medieval/decorations-medieval.png" width="512" height="2048"/>
  </tileset>
- <layer id="12" name="interior-walls1" width="8" height="8" visible="0">
-  <data encoding="csv">
-1285,1285,1285,1285,1285,1285,1285,1285,
-1285,1285,1285,1285,1285,1285,1285,1285,
-1285,1285,0,0,0,0,1285,1285,
-1285,1285,0,0,0,0,1285,1285,
-1285,1285,0,0,0,0,1285,1285,
-1285,1285,0,0,0,0,1285,1285,
-1285,1285,1285,1285,1285,1285,1285,1285,
-1285,1285,1285,1285,1285,1285,1285,1285
+ <tileset firstgid="2667" name="city_outside" tilewidth="32" tileheight="32" tilecount="432" columns="24">
+  <image source="../tilesets/city-outside/LPC_city_outside/city_outside.png" width="768" height="576"/>
+ </tileset>
+ <tileset firstgid="3099" name="interior" tilewidth="32" tileheight="32" tilecount="256" columns="16">
+  <image source="../tilesets/interior/LPC_house_interior/interior.png" width="512" height="512"/>
+ </tileset>
+ <tileset firstgid="3355" name="chests" tilewidth="32" tileheight="32" tilecount="6" columns="2">
+  <image source="../../../../Downloads/LPC Base Assets/LPC Base Assets/tiles/chests.png" width="64" height="96"/>
+ </tileset>
+ <tileset firstgid="3361" name="cabinets" tilewidth="32" tileheight="32" tilecount="78" columns="6">
+  <image source="../../../../Downloads/LPC Base Assets/LPC Base Assets/tiles/cabinets.png" width="192" height="416"/>
+ </tileset>
+ <tileset firstgid="3439" name="town_buildings" tilewidth="32" tileheight="32" tilecount="64" columns="16">
+  <image source="../../../../Downloads/town_buildings.png" width="543" height="128"/>
+ </tileset>
+ <group id="33" name="LPC C Nilsson" visible="0">
+  <layer id="34" name="objects" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,1694,1676,1693,
+0,0,0,0,0,1708,1691,1692,
+0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="14" name="interior-walls-3" width="8" height="8" visible="0">
-  <data encoding="csv">
-0,0,1256,0,0,1256,0,0,
+  </layer>
+ </group>
+ <group id="32" name="LPC Base Assets" visible="0">
+  <layer id="31" name="Objects" width="8" height="8">
+   <data encoding="csv">
+3364,3363,3362,3383,0,0,0,0,
+3370,3369,3368,3389,0,0,0,0,
+3376,3375,3374,3395,0,0,0,0,
+3420,3420,3420,3420,0,0,0,0,
+3426,3426,3426,3426,0,0,0,0,
 0,0,0,0,0,0,0,0,
-1254,0,0,0,0,0,0,1253,
 0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-1254,0,0,0,0,0,0,1253,
-0,0,0,0,0,0,0,0,
-0,0,1255,0,0,1255,0,0
+0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="13" name="interior-walls 2" width="8" height="8" visible="0">
-  <data encoding="csv">
+  </layer>
+  <layer id="30" name="decor" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,3379,3381,0,0,
+0,0,0,0,3385,3387,0,0,
+0,0,0,0,3391,3393,0,0,
+0,3366,3378,3377,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
+ <group id="25" name="interior-walls" visible="0">
+  <layer id="12" name="interior-walls1" width="8" height="8">
+   <data encoding="csv">
+1285,1285,1285,1285,1285,1285,1285,1285,
+1285,1285,1285,1285,1285,1285,1285,1285,
+1285,1285,0,0,0,0,1285,1285,
+1285,1285,0,0,0,0,1285,1285,
+1285,1285,0,0,0,0,1285,1285,
+1285,1285,0,0,0,0,1285,1285,
+1285,1285,1285,1285,1323,1285,1285,1285,
+1285,1285,1285,1285,1323,1285,1285,1285
+</data>
+  </layer>
+  <layer id="13" name="interior-walls 2" width="8" height="8">
+   <data encoding="csv">
 1204,1205,1206,1206,1206,1206,2147484853,2147484852,
 1216,1217,1218,1218,1218,1218,2147484865,2147484864,
 1610613942,1610613954,0,0,0,0,1231,1220,
 1610613942,1610613954,0,0,0,0,2684355778,2684355766,
 1610613942,1610613954,0,0,0,0,2684355778,2684355766,
 1610613942,1610613954,0,0,0,0,2684355778,2684355766,
-1073743040,1073743041,3221226690,3221226690,3221226690,3221226690,3221226689,3221226688,
-1073743028,1073743029,3221226678,3221226678,3221226678,3221226678,3221226677,3221226676
+1073743040,1073743041,3221226690,3221226690,1346,3221226690,3221226689,3221226688,
+1073743028,1073743029,3221226678,3221226678,1346,3221226678,3221226677,3221226676
 </data>
- </layer>
- <layer id="9" name="mage-city 1" width="8" height="8" visible="0">
-  <data encoding="csv">
+  </layer>
+  <layer id="14" name="interior-walls-3" width="8" height="8">
+   <data encoding="csv">
+0,0,1256,0,0,1256,0,0,
+0,0,0,0,0,0,0,0,
+1254,0,0,0,0,0,0,1253,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+1254,0,0,0,0,0,0,1253,
+0,0,0,1201,0,1203,0,0,
+0,0,1255,1213,1214,1215,0,0
+</data>
+  </layer>
+ </group>
+ <group id="24" name="Mage City" visible="0">
+  <layer id="9" name="mage-city 1" width="8" height="8">
+   <data encoding="csv">
 911,912,912,912,912,912,912,913,
 919,920,920,920,920,920,920,921,
 919,920,920,920,920,920,920,921,
@@ -59,31 +117,32 @@
 919,920,920,920,920,920,920,921,
 927,928,928,928,928,928,928,929
 </data>
- </layer>
- <layer id="10" name="mage city 2" width="8" height="8" visible="0">
-  <data encoding="csv">
-1156,1023,1024,1024,1024,1024,1025,1155,
-1155,1039,1034,1032,1032,1035,1041,1164,
-1156,874,1039,1040,1040,1041,876,1155,
-1163,871,874,875,875,876,873,1156,
-1156,879,871,872,872,873,881,1163,
-1163,1155,879,880,880,881,0,1155,
-0,1164,1156,1155,1164,0,1155,0,
-0,1156,1155,1155,1156,1156,1155,0
+  </layer>
+  <layer id="10" name="mage city 2" width="8" height="8">
+   <data encoding="csv">
+0,1023,1024,1024,1024,1024,1025,859,
+0,1039,1034,1032,1032,1035,1041,867,
+0,874,1039,1040,1040,1041,876,0,
+0,871,874,875,875,876,873,0,
+0,879,871,872,872,873,881,0,
+0,2684355693,879,880,880,881,1133,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="11" name="mage city 3" width="8" height="8" visible="0">
-  <data encoding="csv">
-0,0,0,1027,998,0,0,0,
+  </layer>
+  <layer id="11" name="mage city 3" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,998,0,0,0,
 0,0,1155,1155,1006,0,0,0,
 0,994,0,0,1163,1155,994,0,
 0,1002,1139,1140,1156,1163,1002,0,
-0,0,1147,1019,1020,1164,0,0,
-0,2684355693,1148,892,892,859,1133,0,
-944,0,0,854,851,867,0,944,
+0,0,1147,1019,1020,1164,858,0,
+0,854,1148,892,892,0,866,0,
+944,0,0,0,0,0,0,944,
 952,0,0,0,0,0,0,952
 </data>
- </layer>
+  </layer>
+ </group>
  <layer id="8" name="terrain-tiles" width="8" height="8" visible="0">
   <data encoding="csv">
 779,780,780,780,780,780,780,781,
@@ -96,6 +155,72 @@
 769,769,804,805,805,805,805,806
 </data>
  </layer>
+ <group id="37" name="LPC Sign Posts and Clotheslines" visible="0">
+  <layer id="38" name="sign" width="8" height="8">
+   <data encoding="csv">
+1745,1748,1749,1734,1747,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,1729,1730,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
+ <group id="35" name="Guido Bos Cut Up" visible="0">
+  <layer id="36" name="wall" width="8" height="8">
+   <data encoding="csv">
+3455,3456,3457,3456,3456,3456,3456,3467,
+3471,3472,3473,3472,3472,3472,3472,3483,
+3487,3488,3489,3488,3488,3488,3488,3499,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
+ <group id="27" name="Interior" visible="0">
+  <layer id="26" name="Floor" width="8" height="8">
+   <data encoding="csv">
+3163,3163,3163,3163,3163,3163,3163,3163,
+3163,3163,3163,3163,3163,3163,3163,3164,
+3163,3163,3163,3163,3163,3163,3164,3164,
+3163,3163,3163,3163,3163,3164,3164,3164,
+3163,3163,3163,3163,3164,3164,3164,3164,
+3163,3163,3163,3164,3164,3164,3164,3164,
+3163,3163,3164,3164,3164,3164,3164,3164,
+3163,3164,3164,3164,3164,3164,3164,3164
+</data>
+  </layer>
+  <layer id="28" name="Objects" width="8" height="8">
+   <data encoding="csv">
+3197,3198,3196,3195,3228,3229,3230,0,
+3213,3214,3212,3211,3244,3245,3246,0,
+0,0,0,0,0,0,0,0,
+3150,3150,3181,3150,0,0,0,0,
+3166,3166,3166,3166,0,0,0,0,
+0,0,0,0,0,0,0,0,
+3144,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="29" name="Decorations" width="8" height="8">
+   <data encoding="csv">
+3124,3170,3171,3172,3111,3111,3231,0,
+0,0,0,0,3127,3127,0,0,
+0,0,0,0,0,0,0,0,
+3182,3200,0,3202,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+3105,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
  <layer id="1" name="fence_medieval" width="8" height="8" visible="0">
   <data encoding="csv">
 33,2,2,2,2,2,2,35,
@@ -108,92 +233,149 @@
 65,66,81,82,82,83,66,67
 </data>
  </layer>
- <layer id="7" name="medieval buildings terrain" width="8" height="8" visible="0">
-  <data encoding="csv">
+ <group id="39" name="Paths &amp; Town Objects" visible="0">
+  <layer id="40" name="objects" width="8" height="8">
+   <data encoding="csv">
+2056,2057,0,2049,2050,0,1977,1978,
+2072,2073,0,2065,2066,0,1993,1994,
+2058,2186,0,2081,2082,0,2010,0,
+2134,2135,0,2113,2114,0,0,0,
 0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-513,514,0,0,0,0,514,515,
-545,546,546,546,546,546,546,547
+0,0,0,0,0,2143,2144,2145,
+0,0,0,0,0,2159,2160,2161,
+0,0,0,0,0,2175,2176,2177
 </data>
- </layer>
- <layer id="2" name="medieval buildings" width="8" height="8" visible="0">
-  <data encoding="csv">
+  </layer>
+ </group>
+ <group id="23" name="Medieval Buildings" visible="0">
+  <layer id="7" name="medieval buildings terrain" width="8" height="8">
+   <data encoding="csv">
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
-0,0,0,0,617,0,0,0,
-0,0,0,0,633,0,0,0,
-0,0,0,0,649,0,0,0
-</data>
- </layer>
- <layer id="3" name="medieval buildings 2" width="8" height="8" visible="0">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,618,619,620,621,622,623,0,
-0,634,635,636,637,638,639,0,
-0,650,651,652,653,654,655,0
-</data>
- </layer>
- <layer id="4" name="medieval buildings 3" width="8" height="8" visible="0">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,
-0,571,572,572,2147484220,2147484220,2147484219,0,
-0,587,588,588,2147484236,2147484236,2147484235,0,
-0,603,604,604,2147484252,2147484252,2147484251,0,
-0,0,0,0,0,0,0,0,
+514,0,0,0,0,514,515,0,
+546,546,546,546,546,546,547,0,
 0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="5" name="medieval buildings 4" width="8" height="8" visible="0">
-  <data encoding="csv">
+  </layer>
+  <layer id="2" name="medieval buildings" width="8" height="8">
+   <data encoding="csv">
 0,0,0,0,0,0,0,0,
-581,582,582,582,582,582,582,583,
-597,598,598,598,598,598,598,599,
-613,614,614,614,614,614,614,615,
-0,0,0,594,2147484242,0,0,0,
 0,0,0,0,0,0,0,0,
-0,0,593,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,617,0,0,0,0,
+0,0,0,633,0,0,0,0,
+0,0,0,649,0,0,0,0,
 0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="6" name="medieval buildings 5" width="8" height="8" visible="0">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,
-0,0,595,596,595,596,0,0,
-0,0,611,612,611,612,0,0,
+  </layer>
+  <layer id="3" name="medieval buildings 2" width="8" height="8">
+   <data encoding="csv">
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+618,619,620,621,622,623,0,0,
+634,635,636,637,638,639,0,0,
+650,651,652,653,654,655,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="4" name="medieval buildings 3" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+571,572,572,2147484220,2147484220,2147484219,0,0,
+587,588,588,2147484236,2147484236,2147484235,0,0,
+603,604,604,2147484252,2147484252,2147484251,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="19" name="Hanging signs" width="8" height="8" visible="0">
+  </layer>
+  <layer id="5" name="medieval buildings 4" width="8" height="8">
+   <data encoding="csv">
+582,582,582,582,582,582,0,0,
+598,598,598,598,598,598,0,0,
+614,614,614,614,614,614,0,0,
+0,0,594,2147484242,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,593,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="6" name="medieval buildings 5" width="8" height="8">
+   <data encoding="csv">
+0,595,596,595,596,0,0,0,
+0,611,612,611,612,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
+ <layer id="19" name="Hanging signs Reemax" width="8" height="8" visible="0">
   <data encoding="csv">
+1670,1650,1651,1652,1653,1665,1666,2147485318,
+1795,0,0,0,0,0,0,2147485443,
+1796,0,0,0,0,0,0,2147485444,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
-0,1670,1650,1670,1651,1670,1667,0,
-0,1795,0,1795,0,1795,0,0,
-0,1796,0,1796,0,1796,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0
 </data>
  </layer>
- <layer id="20" name="city-outside" width="8" height="8">
-  <data encoding="csv">
+ <group id="43" name="Dungeon Elements Sharm" visible="0">
+  <layer id="44" name="fire" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,2437,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+  <layer id="45" name="cauldron" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,2438,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0
+</data>
+  </layer>
+ </group>
+ <group id="41" name="lpc-farming-tilesets" visible="0">
+  <layer id="42" name="objects" width="8" height="8">
+   <data encoding="csv">
+0,0,0,0,0,0,0,0,
+0,0,2040,1943,1911,1910,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,
+1908,1909,1925,1908,1909,3221227381,3221227380,1924
+</data>
+  </layer>
+ </group>
+ <group id="22" name="city-outside">
+  <layer id="20" name="city-outside" width="8" height="8">
+   <data encoding="csv">
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
@@ -203,10 +385,10 @@
 0,0,0,0,0,1897,1898,0,
 0,0,0,0,0,0,0,0
 </data>
- </layer>
- <layer id="21" name="city-outsid 2" width="8" height="8">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,
+  </layer>
+  <layer id="21" name="city-outside 2" width="8" height="8">
+   <data encoding="csv">
+1745,1748,1749,1747,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,
@@ -215,5 +397,6 @@
 0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0
 </data>
- </layer>
+  </layer>
+ </group>
 </map>

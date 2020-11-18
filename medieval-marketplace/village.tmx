@@ -186,7 +186,7 @@
   <image source="../../../../Downloads/magecity.png" width="256" height="1450"/>
  </tileset>
  <tileset firstgid="2479" name="interior-walls" tilewidth="32" tileheight="32" tilecount="444" columns="12">
-  <image source="../tilesets/interior-walls-bleutailfly-combined.png" width="400" height="1200"/>
+  <image source="../tilesets/interior walls/interior-walls-bleutailfly-combined.png" width="400" height="1200"/>
  </tileset>
  <tileset firstgid="2923" name="interior-walls-bleutailfly-combined" tilewidth="32" tileheight="32" tilecount="444" columns="12">
   <image source="../tilesets/interior-walls-bleutailfly-combined.png" width="400" height="1200"/>
